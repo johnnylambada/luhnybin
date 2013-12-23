@@ -26,7 +26,7 @@ void luhnmask(char *line, char *src, char *dst){
     int add;
 
     //printf("luhnmask\n");
-    while(count<=MAX_LUHN_DIGITS || s!=line){
+    while(count<=MAX_LUHN_DIGITS && s>=line){
         if (! (*s==' '||*s=='-') ) {
             // It's not whitespace
             if (*s>='0' && *s<='9'){
